@@ -1,0 +1,82 @@
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .labels-row {
+    display: flex;
+    justify-content: space-between;
+    width: 540px; /* Adjust the width as needed */
+  }
+  
+  .label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .rectangles-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rectangle {
+    position: relative;
+    width: 100px; /* Updated width */
+    height: 20px; /* Updated height */
+    margin: 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    cursor: pointer;
+  }
+  
+  .left-arrow {
+    left: -20px;
+    border-right: 20px solid #ccc;
+  }
+  
+  .right-arrow {
+    right: -20px;
+    border-left: 20px solid #ccc;
+  }
+  
+  /* Add this class to filled elements */
+  .filledRed {
+    background-color: red;
+  }
+  
+  .filledGreen{
+    background-color: green;
+  }
+  
+  .filledLightGreen{
+    background-color: rgb(87, 183, 87);
+  }
+  
+  .filledYellow{
+    background-color: yellow;
+  }
+  
+  /* Add this class to filled arrows */
+  .filled.left-arrow,
+  .filled.right-arrow {
+    border-top-color: green;
+    border-bottom-color: green;
+  }

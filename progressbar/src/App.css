@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  /* margin: 10px 12px; */
 }
 
 .App-logo {
@@ -35,4 +36,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.next-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.next-button {
+  background-color: #61dafb;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.next-button:hover {
+  background-color: #46b6d3;
+}
+
+.next-button:focus {
+  outline: none;
+}
+
+.next-button:active {
+  background-color: #3c96b0;
 }

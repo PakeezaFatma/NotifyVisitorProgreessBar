@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FeedbackComponent from './component/FeedbackComponent';
+import './App.css'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Logo</h1>
+      <FeedbackComponent title={'Responsiveness'} color={'filledGreen'} />
+      <FeedbackComponent title={'Competency in advising right solution'} color={'filledYellow'} />
+      <FeedbackComponent title={'Trustworthiness'} color={'filledLightGreen'} />
+      <FeedbackComponent title={'Customer service and support'} color={'filledGreen'} />
+      <div className="next-button-container">
+        <button className="next-button" disabled>Next</button>
+      </div>
+
     </div>
   );
-}
+};
 
 export default App;
